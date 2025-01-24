@@ -1,0 +1,44 @@
+html {
+    background-color: green;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black ;
+    margin: 2.5px;
+
+}
+
+.red{
+    background-color: red;
+    border-top-left-radius: 100%;
+}
+
+.yellow{
+    background-color: rgb(17, 123, 56);
+    border-top-right-radius: 100%;
+}
+
+.blue{
+    background-color: rgb(115, 30, 225);
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    background-color: rgb(138, 11, 81);
+    border-bottom-right-radius: 100%;
+}
+
+.flash{
+    background-color: white;
+}
