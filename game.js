@@ -1,4 +1,5 @@
 const game_status = document.querySelector(".game_status")
+let btn_to_start = document.querySelector("#btn_to_start")
 let started = false
 let level1 = 0
 let level = document.querySelector(".level-display")
@@ -9,7 +10,7 @@ let max_score=0
 const btns = ["red","blue","yellow","green"]
 
 
-document.addEventListener("keypress",function(){
+btn_to_start.addEventListener("click",function(){
     if(started == false){
         game_status.textContent="Game has been started!"
         started=true
@@ -65,7 +66,7 @@ function check_ans(k){
         setTimeout(function(){
             document.body.style.backgroundColor="white"
         },100)
-        level.textContent = "Game Over! Press any button to re start"
+        level.innerHTML = "Game Over! Press <strong>restart button</strong> to restart"
         if (max_score<level1){
             max_score=level1
             high_score.innerHTML=`High score is <strong>${max_score}</strong>`}
@@ -79,5 +80,6 @@ function reset(){
     user_arr = []
     level1 = 0
     game_arr = []
+    btn_to_start.textContent="Restart"
 }
 
