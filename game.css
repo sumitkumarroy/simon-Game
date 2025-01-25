@@ -42,3 +42,13 @@ body{
 .flash{
     background-color: white;
 }
+
+#btn_to_start{
+    background-color: blue;
+    color: rgb(255, 255, 255)
+}
+
+#btn_to_start:hover{
+    background-color: rgb(255,255,255);
+    color: black;
+}
